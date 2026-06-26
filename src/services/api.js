@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-// En producción usa VITE_API_URL (configurada en Vercel).
-// En desarrollo local usa localhost:3000/api
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+// En producción (Vercel) usa VITE_API_URL configurada en las Environment Variables.
+// En desarrollo local, si no existe el .env, apunta al backend desplegado.
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://back-end-ashy-delta.vercel.app/api';
 
 const api = axios.create({
   baseURL: BASE_URL,
