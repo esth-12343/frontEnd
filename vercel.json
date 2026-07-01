@@ -10,6 +10,6 @@
     }
   ],
   "env": {
-    "VITE_API_URL": "https://back-end-ashy-delta.vercel.app/api"
+    "VITE_API_URL": "https://back-end-ashy-delta.vercel.app"
   }
 }
